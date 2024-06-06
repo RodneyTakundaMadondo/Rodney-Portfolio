@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.border {
+  border: 1px solid red;
+}
+
+.section-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1rem;
+}
+
+.section-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.min-width {
+  min-width: 360px;
+}
+
+.max-width {
+  width: 100%;
+  max-width: 70rem;
+}
+
+.header {
+  background-color: #0F1624;
+}
+.header__container {
+  padding: 1rem;
+}
+.header__logo {
+  grid-column: 1/8;
+}
+.header__socials {
+  grid-column: 8/13;
+}
+.header__socials--icons {
+  display: flex;
+  justify-content: space-between;
+}
+.header__navigation {
+  grid-column: 1/13;
+}
+.header__navigation--nav-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header {
+  color: white;
+}
+.header__logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.header__socials--icons {
+  font-size: 2rem;
+}
+.header__socials--icons .icon {
+  color: white;
+}
+.header__navigation {
+  grid-column: 1/13;
+}
+.header__navigation--nav-links {
+  display: flex;
+  justify-content: space-between;
+}
+.header__navigation--nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.3rem;
+}/*# sourceMappingURL=style.css.map */
