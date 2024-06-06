@@ -8,6 +8,7 @@
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
+  background-color: #0F1624;
 }
 
 .border {
@@ -36,7 +37,7 @@ body {
 }
 
 .header {
-  background-color: #0F1624;
+  margin-bottom: 3rem;
 }
 .header__container {
   padding: 1rem;
@@ -57,6 +58,37 @@ body {
 .header__navigation--nav-links {
   display: flex;
   justify-content: space-between;
+}
+
+.description__container {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.description__image {
+  margin-top: 2rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 50%;
+  padding: 2px;
+  background-image: linear-gradient(326.6deg, #13adc7 21.25%, #6978d1 58.73%, #945dd6 77.47%);
+  box-shadow: 0px 20px 50px 0px rgba(0, 178, 255, 0.25);
+  position: relative;
+}
+.description__image .rodney-himself {
+  max-width: 100%;
+  display: block;
+  border-radius: 50%;
+}
+.description__image::before {
+  content: "";
+  display: block;
+  width: 300px;
+  height: 300px;
+  background-image: url("../images/big-ellipse.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
 }
 
 .header {
@@ -83,4 +115,23 @@ body {
   text-decoration: none;
   color: white;
   font-size: 1.3rem;
+}
+
+.description .headingBlue {
+  background: linear-gradient(270deg, #13adc7 0%, #6978d1 66.67%, #945dd6 100%);
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.description__heading {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.description__text {
+  color: white;
+  opacity: 0.6;
+  line-height: 1.5;
 }/*# sourceMappingURL=style.css.map */
