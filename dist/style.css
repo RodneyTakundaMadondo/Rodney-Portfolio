@@ -129,14 +129,14 @@ body {
 .projects__container > * {
   grid-column: 1/-1;
 }
-.projects__project-container {
+gg .projects__project-container {
   overflow: hidden;
   background-color: cyan;
   padding: 1px;
   border-radius: 20px;
   background-image: linear-gradient(321.62deg, #13adc7 9.27%, #6978d1 59.96%, #945dd6 85.3%);
 }
-.projects__project-container .inner-container {
+gg .projects__project-container .inner-container {
   background-color: #0F1624;
   display: flex;
   flex-direction: column;
@@ -144,7 +144,7 @@ body {
   padding: 1.75rem;
   border-radius: 20px;
 }
-.projects__project-container .project__image img {
+gg .projects__project-container .project__image img {
   display: block;
   max-width: 100%;
 }
