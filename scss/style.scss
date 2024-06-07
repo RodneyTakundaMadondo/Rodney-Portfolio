@@ -1,123 +1,212 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 *,
 *::before,
-*::after{
+*::after {
     box-sizing: border-box;
 }
-body{
+
+body {
     margin: 0;
-    font-family: "Roboto", sans-serif;
+    font-family:  "Poppins", Arial, Helvetica, sans-serif;
     background-color: #0F1624;
-    // color: white;
+  
 }
-.border{
-    border: 1px solid red;
+
+.border {
+    border: 2px solid red;
 }
 
 //LAYOUT STYLES 
-.section-grid{
+.section-grid {
     display: grid;
-    grid-template-columns: repeat(12,1fr);
+    grid-template-columns: repeat(12, 1fr);
     gap: 1rem;
 }
-.section-flex{
+
+.section-flex {
     display: flex;
     flex-direction: column;
-    gap:1rem
+    gap: 1rem
 }
-.min-width{
+
+.min-width {
     min-width: 360px;
 }
-.max-width{
+
+.max-width {
     width: 100%;
     max-width: 70rem;
 }
 
-.header{
+.header {
     margin-bottom: 3rem;
-    &__container{
+
+    &__container {
         padding: 1rem;
     }
-    
 
-    &__logo{
+
+    &__logo {
         grid-column: 1/8;
     }
-    &__socials{
-        grid-column:8/13;
-        &--icons{
+
+    &__socials {
+        grid-column: 8/13;
+
+        &--icons {
             display: flex;
             justify-content: space-between;
         }
     }
-    &__navigation{
-        grid-column:1/13;
-        &--nav-links{
+
+    &__navigation {
+        grid-column: 1/13;
+
+        &--nav-links {
             display: flex;
             justify-content: space-between;
-          
+
         }
     }
 }
-.description{
-    &__container{
-        padding-left:2rem;
-        padding-right:2rem;
+
+.description {
+    &__container {
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
-    &__image{
-        
+
+    &__image {
+
         margin-top: 2rem;
         width: fit-content;
         border-radius: 50%;
         padding: 2px;
-        background-image: linear-gradient(326.6deg, #13adc7 21.25%, #6978d1 58.73%, #945dd6 77.47%);;
+        background-image: linear-gradient(326.6deg, #13adc7 21.25%, #6978d1 58.73%, #945dd6 77.47%);
         box-shadow: 0px 20px 50px 0px rgba(0, 178, 255, 0.25);
         position: relative;
-        .rodney-himself{
-         max-width: 100%;
-         display: block;
-         border-radius: 50%;
-        
+
+        .rodney-himself {
+            max-width: 100%;
+            display: block;
+            border-radius: 50%;
+
 
         }
-        
+
     }
-    &__image::before{
+
+    &__image::before {
         content: "";
         display: block;
-        width: 300px;
-        height: 300px;
+        width: 367px;
+        height: 367px;
         background-image: url('../images/big-ellipse.svg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         position: absolute;
+        top: 2px;
+        left: -200px;
+        z-index: -2;
         
+
+    }
+
+    &__image::after {
+        display: block;
+        content: "";
+        width: 113px;
+        height: 113px;
+        background-image: linear-gradient(321.62deg, #13adc7 9.27%, #6978d1 59.96%, #945dd6 85.3%);
+        position: absolute;
+        border-radius: 50%;
+        top: 120px;
+        left: 120px;
+        z-index: -1;
+        filter: drop-shadow(0px 10px 30px rgba(0, 178, 255, 0.35));
+    }
+    &__button{
+        text-decoration: none;
+        color: white;
+        background-image: linear-gradient(321.62deg, #13adc7 9.27%, #6978d1 59.96%, #945dd6 85.3%);
+        padding:1rem;
+        border-radius: 30px ;
+        width: fit-content;
+        margin-top: 4rem;
+        margin-left: 2rem;
     }
 }
+
+.projects{
+    margin-top: 8rem;
+    
+    &__container{
+        gap:2rem;
+        border: 1px solid pink;
+       overflow: hidden;
+    }
+    &__container > *{
+        grid-column: 1/-1;
+    }
+    &__heading{
+       
+    }
+    &__project-container{
+        overflow: hidden;
+        background-color: cyan;
+        padding: 1px;
+        border-radius: 20px;
+        background-image: linear-gradient(321.62deg, #13adc7 9.27%, #6978d1 59.96%, #945dd6 85.3%);
+        .inner-container{
+            background-color: #0F1624; 
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            padding: 1.75rem;
+            border-radius: 20px;
+        }
+        .project__image{
+            img{
+                display: block;
+                max-width: 100%;
+                
+            }
+        }
+    }
+   
+}
+
 //TYPOGRAPHY
 
-.header{
+.header {
     color: white;
-    &__logo{
+
+    &__logo {
         font-size: 1.5rem;
         font-weight: 700;
     }
-    &__socials{
-        
-        &--icons{
-          font-size: 2rem;
-          .icon{
-            color: white;
-          }
+
+    &__socials {
+
+        &--icons {
+            font-size: 2rem;
+
+            .icon {
+                color: white;
+            }
         }
     }
-    &__navigation{
-        grid-column:1/13;
-        &--nav-links{
+
+    &__navigation {
+        grid-column: 1/13;
+
+        &--nav-links {
             display: flex;
             justify-content: space-between;
-            li a{
+
+            li a {
                 text-decoration: none;
                 color: white;
                 font-size: 1.3rem;
@@ -125,22 +214,33 @@ body{
         }
     }
 }
-.description{
-  .headingBlue{
-    background: linear-gradient(270deg, #13adc7 0%, #6978d1 66.67%, #945dd6 100%);
-    color: transparent;
-    background-clip: text;
-    font-size: 2rem;
-    font-weight: 700;
-  }
-  &__heading{
-    color: white;
-    font-size: 1.8rem;
-    font-weight: 700;
-  }
-  &__text{
-    color: white;
-    opacity: 0.6;
-    line-height: 1.5;
-  }
+
+.description {
+    .headingBlue {
+        background: linear-gradient(270deg, #13adc7 0%, #6978d1 66.67%, #945dd6 100%);
+        color: transparent;
+        background-clip: text;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    &__heading {
+        color: white;
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+
+    &__text {
+        color: white;
+        opacity: 0.6;
+        line-height: 1.5;
+    }
+}
+
+.projects{
+    &__heading{
+        color: white;
+        font-weight: 700;
+        // font-size: 2rem;
+    }
 }
