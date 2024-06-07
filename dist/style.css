@@ -144,6 +144,9 @@ body {
   padding: 1.75rem;
   border-radius: 20px;
 }
+.projects__project-container .project__image {
+  width: 18gitrem;
+}
 .projects__project-container .project__image img {
   display: block;
   max-width: 100%;
