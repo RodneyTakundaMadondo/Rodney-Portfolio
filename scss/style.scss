@@ -321,30 +321,41 @@ body {
         flex-direction: row;
         gap: 27px;; 
     }
-  
+  margin-bottom: 2rem;
 
 }
 
 .contacts{
+    padding: 0 20px;
     &__container{
-        display: flex;
+        display: flex;  
         flex-wrap: wrap;
         justify-content: space-between;
-        gap: 2rem;
+        gap: 1rem;
+        
         
     }
     &__socials{
-       width: 12rem;
+        flex: 0 0 40%;
     }
     &__socials--icons{
         display: flex;
         justify-content: space-between;
-        font-size:3rem;
+        font-size:2rem
+    }
+    &__cta-container{
+        flex: 0 0 49%;
     }
     &__cta{
         background:  linear-gradient(270deg, #13adc7 0%, #6978d1 66.67%, #945dd6 100%);
     }
+    margin-bottom: 2rem;
 }
+
+
+
+
+
 //TYPOGRAPHY
 
 .header {
@@ -447,9 +458,7 @@ body {
     }
 }
 .contacts{
-    &__container{
-        
-    }
+
     &__email{
         text-decoration: none;
     }
