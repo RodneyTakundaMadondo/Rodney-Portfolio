@@ -47,7 +47,7 @@ body {
   margin-bottom: 3rem;
 }
 .header__container {
-  padding: 1rem;
+  padding: 3rem 2rem;
 }
 .header__logo {
   grid-column: 1/8;
@@ -67,14 +67,40 @@ body {
   justify-content: space-between;
 }
 
+@media (min-width: 700px) {
+  .header__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .header__logo {
+    order: -1;
+    flex: 0 0 12rem;
+  }
+  .header__navigation {
+    order: 0;
+    flex: 0 0 25rem;
+  }
+  .header__navigation--nav-links {
+    justify-content: flex-start !important;
+    gap: 3rem;
+  }
+  .header__socials {
+    flex: 0 0 12rem;
+    order: 1;
+  }
+  .header__socials--icons {
+    gap: 2rem;
+  }
+}
 .description__container {
+  margin: 0 auto;
   padding-left: 2rem;
   padding-right: 2rem;
 }
 .description__image {
   margin-top: 2rem;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 205px;
   border-radius: 50%;
   padding: 2px;
   background-image: linear-gradient(326.6deg, #13adc7 21.25%, #6978d1 58.73%, #945dd6 77.47%);
@@ -82,6 +108,7 @@ body {
   position: relative;
 }
 .description__image .rodney-himself {
+  width: 205px;
   max-width: 100%;
   display: block;
   border-radius: 50%;
@@ -109,19 +136,19 @@ body {
   position: absolute;
   border-radius: 50%;
   top: 120px;
-  left: 120px;
+  left: 140px;
   z-index: -1;
   filter: drop-shadow(0px 10px 30px rgba(0, 178, 255, 0.35));
 }
 .description__button {
   text-decoration: none;
+  text-align: center;
   background-image: linear-gradient(321.62deg, #13adc7 9.27%, #6978d1 59.96%, #945dd6 85.3%);
   padding: 1rem;
   border-radius: 30px;
-  width: -moz-fit-content;
-  width: fit-content;
-  margin-top: 4rem;
-  margin-left: 2rem;
+  width: 156px;
+  margin-top: 2rem;
+  transition: all 0.3s ease, transform 0.2s ease;
 }
 
 .projects {
@@ -239,6 +266,11 @@ body {
   box-shadow: 0px 10px 30px 0px rgba(0, 178, 255, 0.35);
 }
 
+@media (min-width: 768px) {
+  .additional-tech__container {
+    margin: 0 auto;
+  }
+}
 .about-me {
   padding: 0 20px;
   margin-bottom: 2rem;
@@ -282,6 +314,25 @@ body {
   gap: 27px;
 }
 
+@media (min-width: 767px) {
+  .about-me__container {
+    margin: 0 auto;
+  }
+  .about-me__timeline {
+    flex-direction: row;
+  }
+  .about-me__item {
+    flex-direction: column;
+  }
+  .about-me__item .item__separator::after {
+    content: "";
+    width: 1400px;
+    height: 2px;
+    background-color: white;
+    left: -1400px;
+    top: 6px;
+  }
+}
 .contacts {
   padding: 0 20px;
   margin-bottom: 2rem;
@@ -293,7 +344,7 @@ body {
   gap: 1rem;
 }
 .contacts__socials {
-  flex: 0 0 40%;
+  flex: 0 0 12rem;
 }
 .contacts__socials--icons {
   display: flex;
@@ -301,7 +352,7 @@ body {
   font-size: 2rem;
 }
 .contacts__cta-container {
-  flex: 0 0 49%;
+  flex: 0 0 12rem;
 }
 .contacts__cta {
   background: linear-gradient(270deg, #13adc7 0%, #6978d1 66.67%, #945dd6 100%);
@@ -384,22 +435,9 @@ body {
   font-weight: 600;
 }
 
-@media (min-width: 767px) {
-  .about-me__timeline {
-    flex-direction: row;
-  }
-  .about-me__item {
-    flex-direction: column;
-  }
-  .about-me__item .item__separator {
-    flex: 0 0 12px;
-  }
-  .about-me__item .item__separator::after {
-    display: block;
-    width: 4000%;
-    height: 2px;
-    left: 5px;
-    top: 6px;
-    z-index: -1;
+@media (min-width: 768px) {
+  .max-width {
+    max-width: 750px;
+    margin: 0 auto;
   }
 }/*# sourceMappingURL=style.css.map */
