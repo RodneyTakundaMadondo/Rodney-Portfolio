@@ -47,7 +47,8 @@ body {
   margin-bottom: 3rem;
 }
 .header__container {
-  padding: 3rem 2rem;
+  margin-top: 3rem !important;
+  margin-bottom: 3rem !important;
 }
 .header__logo {
   grid-column: 1/8;
@@ -67,39 +68,34 @@ body {
   justify-content: space-between;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 768px) {
+  .header {
+    margin-bottom: 10rem;
+  }
   .header__container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
   }
   .header__logo {
-    order: -1;
-    flex: 0 0 12rem;
+    order: -2;
   }
   .header__navigation {
-    order: 0;
-    flex: 0 0 25rem;
+    order: -1;
   }
   .header__navigation--nav-links {
-    justify-content: flex-start !important;
-    gap: 3rem;
+    gap: 20px;
   }
   .header__socials {
-    flex: 0 0 12rem;
     order: 1;
   }
   .header__socials--icons {
-    gap: 2rem;
+    gap: 1.25rem;
   }
 }
 .description__container {
   margin: 0 auto;
-  padding-left: 2rem;
-  padding-right: 2rem;
 }
 .description__image {
-  margin-top: 2rem;
   width: 205px;
   border-radius: 50%;
   padding: 2px;
@@ -149,8 +145,67 @@ body {
   width: 156px;
   margin-top: 2rem;
   transition: all 0.3s ease, transform 0.2s ease;
+  box-shadow: 0px 10px 30px 0px rgba(0, 178, 255, 0.35);
 }
 
+@media (min-width: 768px) {
+  .description__heading {
+    width: 100% !important;
+    margin-bottom: 2rem;
+  }
+  .description__text {
+    margin-bottom: 3.75rem !important;
+  }
+  .description__image {
+    width: 301px !important;
+    height: 301px !important;
+  }
+  .description__image .rodney-himself {
+    width: 299px !important;
+  }
+  .description__image::before {
+    content: "";
+    width: 532px;
+    height: 532px;
+    top: 65px;
+    left: -270px;
+  }
+  .description__image::after {
+    content: "";
+    width: 164px;
+    height: 164px;
+    left: 200px;
+    top: 180px;
+  }
+  .description__button {
+    width: 180px;
+    padding: 1.3rem;
+    border-radius: 50px;
+  }
+  .description__heading {
+    font-size: 64px !important;
+  }
+  .description__heading .headingBlue {
+    font-size: 64px !important;
+  }
+  .description__button {
+    font-weight: 700;
+  }
+}
+@media (min-width: 1200px) {
+  .description__container {
+    position: relative;
+  }
+  .description__text {
+    max-width: 635px !important;
+    margin: 0 !important;
+  }
+  .description__image {
+    position: absolute;
+    right: 150px;
+    top: -50px;
+  }
+}
 .projects {
   margin-top: 8rem;
 }
@@ -314,7 +369,7 @@ body {
   gap: 27px;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .about-me__container {
     margin: 0 auto;
   }
@@ -436,8 +491,21 @@ body {
 }
 
 @media (min-width: 768px) {
+  html {
+    font-size: 18px;
+  }
   .max-width {
     max-width: 750px;
     margin: 0 auto;
+  }
+}
+@media (min-width: 992px) {
+  .max-width {
+    max-width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .max-width {
+    max-width: 1170px;
   }
 }/*# sourceMappingURL=style.css.map */
