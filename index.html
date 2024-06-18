@@ -37,8 +37,12 @@
     <main class="main-content">
         <section class="description">
             <div class="description__container  min-width section-flex max-width">
-                <h1 class="description__heading fc"><span class="headingBlue">
-                    Hello, I'm Rodney,</span> <br>a frontend developer
+                <h1 class="description__heading fc">
+                    <span>
+                    Hello, I'm Rodney,
+                  </span> 
+                 <br>
+                  a frontend developer
                 </h1>
                 <p class="description__text fcp max-width">
                     I love using programming languages and frameworks to bring your ideas to life on the web, creating
@@ -53,9 +57,12 @@
         </section>
 
         <section class="projects">
-            <div class="projects__container section-grid min-width max-width">
+            <div class="projects-heading__container max-width">
                 <h2 class="projects__heading fc">Projects</h2>
-                <div class="projects__project-container ">
+            </div>
+            <div class="projects__container section-grid min-width max-width">
+
+                <div class="projects__project-container proj1" >
                     <div class="project">
                         <div class="project__image">
                             <img src="./images/signup.jpg" alt="Screenshot of project">
@@ -73,7 +80,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="projects__project-container">
+                <div class="projects__project-container proj2" >
                     <div class="project">
                         <div class="project__image">
                             <img src="./images/socialproof.jpg" alt="Screenshot of project">
@@ -90,7 +97,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="projects__project-container">
+                <div class="projects__project-container proj3">
                     <div class="project">
                         <div class="project__image">
                             <img src="./images/fourfeature.jpg" alt="Screenshot of project">
@@ -107,13 +114,13 @@
                         </div>
                     </div>
                 </div>
-                <div></div>
+                <!-- <div></div> -->
             </div>
         </section>
 
         <section class="technologies">
             <div class="technologies__container max-width">
-                <h2 class="technologies__heading fc">Technologies</h2>
+                <h2 class="technologies__heading section-title fc">Technologies</h2>
 
                 <div class="technologies__skills">
                     <div class="language__level fc">
@@ -157,7 +164,7 @@
                 </div>
                 <div class="technologies__skills">
                     <div class="language__level fc">
-                        <span>Tailwind Css</span> <span>Newbie</span>
+                        <span>Tailwind CSS</span> <span>Newbie</span>
                     </div>
                     <div class="loading">
                         <div class="indicator nwb"></div>
@@ -168,8 +175,13 @@
         </section>
 
         <section class="additional-tech">
+            <div class="additional-heading__container max-width">
+                <h2 class="additional-tech__heading section-title  fc">
+                Additional Technologies and skills
+            </h2>
+            </div>
             <div class="additional-tech__container max-width">
-                <h2 class="additional-tech__heading fc">Additional Technologies and skills</h2>
+                
                 <div class="additional-tech__skills">
                     <div class="bullet"></div>
                     <span class="tech fc">Git/Github</span>
@@ -184,7 +196,7 @@
                 </div>
                 <div class="additional-tech__skills">
                     <div class="bullet"></div>
-                    <span class="tech fc">SQL Server Management Studio 19</span>
+                    <span class="tech fc">SQL Server Management Studio </span>
                 </div>
                 <div class="additional-tech__skills">
                     <div class="bullet"></div>
@@ -195,9 +207,9 @@
 
         <section class="about-me">
             <div class="about-me__container max-width">
-                <h2 class="about-me__heading fc">About me</h2>
+                <h2 class="about-me__heading section-title fc">About me</h2>
                 <ul class="about-me__timeline min-width">
-                    <li class="about-me__item item border">
+                    <li class="about-me__item item">
                         <h3 class="item__heading fc">2021</h3>
                         <div class="item__separator last"></div>
                         <p class="item__text fcp">
@@ -207,7 +219,7 @@
                             web development with HTML and CSS, laying a solid foundation for my IT career.
                         </p>
                     </li>
-                    <li class="about-me__item item border">
+                    <li class="about-me__item item ">
                         <h3 class="item__heading fc">2023</h3>
                         <div class="item__separator sec"></div>
                         <p class="item__text fcp">
@@ -217,7 +229,7 @@
                             passion in this area.
                         </p>
                     </li>
-                    <li class="about-me__item item border">
+                    <li class="about-me__item item ">
                         <h3 class="item__heading fc">2024</h3>
                         <div class="item__separator "></div>
                         <p class="item__text fcp">
@@ -237,7 +249,7 @@
                 <span class="contacts__cta">
                 Feel free to contact me
             </span></div>
-            <div class="contacts__socials border">
+            <div class="contacts__socials">
                 <ul class="contacts__socials--icons">
                     <li><a href=""><i class="fa-brands fa-linkedin fc"></i></a></li>
                     <li><a href=""><i class="fa-brands fa-facebook fc"></i></a></li>
@@ -246,7 +258,7 @@
                 </ul>
             </div>
 
-          <div>
+          <div class="contacts__email">
             <a href="mailto:madondotakundaoriginal@gmail.com" class="contacts__email fc">madondotakundaoriginal@gmail.com</a>
           </div>
 
