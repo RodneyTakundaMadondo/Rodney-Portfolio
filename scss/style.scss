@@ -60,6 +60,7 @@ body {
 }
 
 .header {
+    
     margin-bottom: 3rem;
 
     &__container {
@@ -78,6 +79,9 @@ body {
         &--icons {
             display: flex;
             justify-content: space-between;
+            li a{
+                opacity: .8;
+            }
         }
     }
 
@@ -142,7 +146,7 @@ body {
         &__socials{
             &--icons{
                 li a:hover{
-                    opacity: .3;
+                    opacity: 1;
                 }
             }
         }
@@ -732,7 +736,10 @@ body {
     &__socials--icons {
         display: flex;
         justify-content: space-between;
-        font-size: 2rem
+        font-size: 2rem;
+        li a{
+            opacity: .8;
+        }
     }
 
     &__cta-container {
@@ -746,7 +753,17 @@ body {
     margin-bottom: 2rem;
 }
 
-@media (min-width:768px) {}
+@media (min-width:768px) {
+    .contacts{
+        &__socials{
+            &--icons{
+                li a:hover{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
 
 
 

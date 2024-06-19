@@ -70,6 +70,9 @@ body {
   display: flex;
   justify-content: space-between;
 }
+.header__socials--icons li a {
+  opacity: 0.8;
+}
 .header__navigation {
   grid-column: 1/13;
 }
@@ -108,7 +111,7 @@ body {
 }
 @media (min-width: 992px) {
   .header__socials--icons li a:hover {
-    opacity: 0.3;
+    opacity: 1;
   }
   .header__navigation--nav-links li {
     position: relative;
@@ -581,6 +584,9 @@ body {
   justify-content: space-between;
   font-size: 2rem;
 }
+.contacts__socials--icons li a {
+  opacity: 0.8;
+}
 .contacts__cta-container {
   flex: 0 0 12rem;
 }
@@ -588,6 +594,11 @@ body {
   background: linear-gradient(270deg, #13adc7 0%, #6978d1 66.67%, #945dd6 100%);
 }
 
+@media (min-width: 768px) {
+  .contacts__socials--icons li a:hover {
+    opacity: 1;
+  }
+}
 .header__logo {
   font-size: 1.5rem;
   font-weight: 700;
