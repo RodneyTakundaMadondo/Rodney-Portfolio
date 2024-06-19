@@ -10,25 +10,25 @@
     <title>Rodney-Front-End Developer Portfolio</title>
 </head>
 
-<body>
-    <header class=" header fc">
+<body onload="dynamicDate()">
+    <header class="header fc">
         <div class="header__container section-grid min-width max-width">
-            <h1 class="header__logo ">R.T.M portfolio</h1>
+            <h1 class="header__logo  "><a href="index.html">R.T.M portfolio</a></h1>
 
             <nav class="header__socials ">
                 <ul class="header__socials--icons">
-                    <li><a href=""><i class="fa-brands fa-linkedin fc"></i></a></li>
-                    <li><a href=""><i class="fa-brands fa-facebook fc"></i></a></li>
-                    <li><a href=""><i class="fa-brands fa-instagram fc"></i></a></li>
+                    <li><a target="_blank" href="https://www.linkedin.com/in/madondotakundaoriginal"><i class="fa-brands fa-linkedin fc"></i></a></li>
+                    <li><a target="_blank" href="https://github.com/RodneyTakundaMadondo"><i class="fa-brands fa-github fc"></i></a></li>
+                    <li><a target="_blank" href="https://www.instagram.com/i_am_rodney_22/"><i class="fa-brands fa-instagram fc"></i></a></li>
 
                 </ul>
             </nav>
 
             <nav class="header__navigation ">
                 <ul class="header__navigation--nav-links">
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Technologies</a></li>
-                    <li><a href="#">About me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#technologies">Technologies</a></li>
+                    <li><a href="#aboutme">About me</a></li>
                 </ul>
             </nav>
         </div>
@@ -36,7 +36,7 @@
 
     <main class="main-content">
         <section class="description">
-            <div class="description__container  min-width section-flex max-width">
+            <div class="description__container section-pad min-width section-flex max-width ">
                 <h1 class="description__heading fc">
                     <span>
                     Hello, I'm Rodney,
@@ -52,15 +52,15 @@
                 <div class="description__image ">
                     <img class="rodney-himself" src="./images/avatar-rodney.jpg" alt="Rodney">
                 </div>
-                <a class="description__button fc" href="#">Download CV</a>
+                <a class="description__button fc" href="./Resume/Rodney Takunda Madondo.pdf" download>Download CV</a>
             </div>
         </section>
 
-        <section class="projects">
-            <div class="projects-heading__container max-width">
+        <section id="projects" class="projects ">
+            <div class="projects-heading__container max-width ">
                 <h2 class="projects__heading fc">Projects</h2>
             </div>
-            <div class="projects__container section-grid min-width max-width">
+            <div class="projects__container section-grid min-width max-width ">
 
                 <div class="projects__project-container proj1" >
                     <div class="project">
@@ -75,8 +75,8 @@
                         </p>
                         <div class="button__container">
 
-                            <a class="project__live-btn fc" href="#">Live Preview</a>
-                            <a class="project__git-btn fc" href="#">Github</a>
+                            <a class="project__live-btn fc" target="_blank" href="https://rodneytakundamadondo.github.io/Newsletter-sign-up-form-with-success-message/">Live Preview</a>
+                            <a class="project__git-btn fc" target="_blank" href="https://github.com/RodneyTakundaMadondo/Newsletter-sign-up-form-with-success-message.git">Github</a>
                         </div>
                     </div>
                 </div>
@@ -92,8 +92,8 @@
                         </p>
                         <div class="button__container">
 
-                            <a class="project__live-btn fc" href="#">Live Preview</a>
-                            <a class="project__git-btn fc" href="#">Github</a>
+                            <a class="project__live-btn fc" target="_blank" href="https://rodneytakundamadondo.github.io/Social-proof-section/">Live Preview</a>
+                            <a class="project__git-btn fc" target="_blank" href="https://github.com/RodneyTakundaMadondo/Social-proof-section.git">Github</a>
                         </div>
                     </div>
                 </div>
@@ -109,8 +109,8 @@
                         </p>
                         <div class="button__container">
 
-                            <a class="project__live-btn fc" href="#">Live Preview</a>
-                            <a class="project__git-btn fc" href="#">Github</a>
+                            <a class="project__live-btn fc" target="_blank" href="https://rodneytakundamadondo.github.io/Four-card-feature-section/">Live Preview</a>
+                            <a class="project__git-btn fc" target="_blank" href="https://github.com/RodneyTakundaMadondo/Four-card-feature-section.git">Github</a>
                         </div>
                     </div>
                 </div>
@@ -118,8 +118,8 @@
             </div>
         </section>
 
-        <section class="technologies">
-            <div class="technologies__container max-width">
+        <section id="technologies" class="technologies section-pad">
+            <div class="technologies__container max-width ">
                 <h2 class="technologies__heading section-title fc">Technologies</h2>
 
                 <div class="technologies__skills">
@@ -174,13 +174,13 @@
 
         </section>
 
-        <section class="additional-tech">
-            <div class="additional-heading__container max-width">
+        <section  class="additional-tech section-pad">
+            <div class="additional-heading__container max-width ">
                 <h2 class="additional-tech__heading section-title  fc">
                 Additional Technologies and skills
             </h2>
             </div>
-            <div class="additional-tech__container max-width">
+            <div class="additional-tech__container max-width ">
                 
                 <div class="additional-tech__skills">
                     <div class="bullet"></div>
@@ -205,8 +205,8 @@
             </div>
         </section>
 
-        <section class="about-me">
-            <div class="about-me__container max-width">
+        <section id="aboutme" class="about-me section-pad ">
+            <div class="about-me__container max-width min-width ">
                 <h2 class="about-me__heading section-title fc">About me</h2>
                 <ul class="about-me__timeline min-width">
                     <li class="about-me__item item">
@@ -248,12 +248,13 @@
             <div class="contacts__cta-container"> 
                 <span class="contacts__cta">
                 Feel free to contact me
-            </span></div>
-            <div class="contacts__socials">
+               </span>
+           </div>
+           <div class="contacts__socials">
                 <ul class="contacts__socials--icons">
-                    <li><a href=""><i class="fa-brands fa-linkedin fc"></i></a></li>
-                    <li><a href=""><i class="fa-brands fa-facebook fc"></i></a></li>
-                    <li><a href=""><i class="fa-brands fa-instagram fc"></i></a></li>
+                    <li><a target="_blank" href="https://www.linkedin.com/in/madondotakundaoriginal"><i class="fa-brands fa-linkedin fc"></i></a></li>
+                    <li><a target="_blank" href="https://github.com/RodneyTakundaMadondo"><i class="fa-brands fa-github fc"></i></a></li>
+                    <li><a target="_blank" href="https://www.instagram.com/i_am_rodney_22/"><i class="fa-brands fa-instagram fc"></i></a></li>
 
                 </ul>
             </div>
@@ -261,10 +262,12 @@
           <div class="contacts__email">
             <a href="mailto:madondotakundaoriginal@gmail.com" class="contacts__email fc">madondotakundaoriginal@gmail.com</a>
           </div>
-
+          <div class="contacts__copyright fc ">
+            <p id="foot"></p>
+          </div>
         </div>
     </footer>
-
+<script src="./index.js"></script>
 </body>
 
 </html>

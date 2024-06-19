@@ -10,6 +10,9 @@ $guru: 95%;
     padding: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 body {
     margin: 0;
     font-family: "Poppins", Arial, Helvetica, sans-serif;
@@ -36,7 +39,9 @@ body {
     grid-template-columns: repeat(12, 1fr);
     gap: 1rem;
 }
-
+.section-pad{
+    padding: 0 20px;
+}
 .section-flex {
     display: flex;
     flex-direction: column;
@@ -45,11 +50,13 @@ body {
 
 .min-width {
     min-width: 360px;
+    margin: 0 auto;
 }
 
 .max-width {
     width: 100%;
     max-width: 70rem;
+    margin:0 auto;
 }
 
 .header {
@@ -102,7 +109,7 @@ body {
             order: -1;
 
             &--nav-links {
-                gap: 20px
+                gap: 3rem;
             }
         }
 
@@ -114,11 +121,61 @@ body {
             }
         }
     }
+
+    //TYPOGRAPHY
+    .header{
+        &__navigation {
+    
+            &--nav-links {
+    
+                li a {
+                    
+                    font-size: 18px !important;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+@media(min-width:992px){
+    .header{
+        &__socials{
+            &--icons{
+                li a:hover{
+                    opacity: .3;
+                }
+            }
+        }
+        &__navigation{
+            &--nav-links{
+                li{
+                    position: relative;
+                }
+                li a::after{
+                    content: "";
+                    position: absolute;
+                    left: 1px;
+                    right: 1px;
+                    bottom: -3px;
+                    height: 2px;
+                    background-image: linear-gradient(270deg, #13adc7 0%, #6978d1 66.67%, #945dd6 100%);
+                    transform: scaleX(0);
+                    transform-origin: left center;
+                    transition: transform 0.3s ease-in-out;
+                    border-radius: 2px;
+                }
+                li a:hover::after{
+                    transform: scaleX(1);
+                }
+            }
+        }
+    }
 }
 
 
 .description {
     &__container {
+        padding: 0 20px;
         margin: 0 auto;
     }
     &__image {
@@ -178,8 +235,20 @@ body {
         transition: all 0.3s ease, transform 0.2s ease;
         box-shadow: 0px 10px 30px 0px rgba(0, 178, 255, 0.35);
     }
+    &__button:hover{
+        background-image: linear-gradient(270deg, #31cbe5 0%, #8796ef 66.67%, #b27bf4 100%);
+        box-shadow: 0px 10px 30px 0px rgba(0, 178, 255, 0.5);
+        transform: scale(1.05);
+    }
 }
-
+@media(min-width:200px) and (max-width:768px){
+    .description{
+        &__container{
+            width: 260px;
+            margin: 0 auto;
+        }
+    }
+}
 @media(min-width:768px) {
 
     //LAYOUT
@@ -221,6 +290,7 @@ body {
             padding: 1.3rem;
             border-radius: 50px;
         }
+      
 
 
     }
@@ -260,7 +330,8 @@ body {
         }
         &__button{
             position: absolute;
-            top:300px
+            top:300px;
+            width: 10rem;
         }
     }
 }
@@ -311,6 +382,13 @@ body {
                     text-align: center;
                     box-shadow: 0px 10px 30px 0px rgba(0, 178, 255, 0.35);
                 }
+                .project__live-btn:hover{
+                    
+                        background-image: linear-gradient(270deg, #31cbe5 0%, #8796ef 66.67%, #b27bf4 100%);
+                        box-shadow: 0px 10px 30px 0px rgba(0, 178, 255, 0.5);
+                        transform: scale(1.05);
+                    
+                }
 
                 .project__git-btn {
                     text-decoration: none;
@@ -320,6 +398,9 @@ body {
                     border-radius: 30px;
                     width: 8rem;
                     text-align: center;
+                }
+                .project__git-btn:hover{
+                    transform: scale(1.05);
                 }
             }
         }
@@ -413,6 +494,7 @@ body {
 }
 
 .technologies {
+    margin-bottom: 3rem;
     &__container {
         padding: 2rem;
     }
@@ -535,6 +617,7 @@ body {
         &__skills{
             width:45%;
             .bullet{
+                flex: 0 0 24px;
                 width: 24px;
                 height: 24px;
             }
@@ -543,8 +626,6 @@ body {
 }
 
 .about-me {
-    padding: 0 20px;
-
     &__heading {
         margin-bottom: 2rem;
     }
@@ -586,9 +667,10 @@ body {
 
     &__item {
         display: flex;
-        flex-basis: auto;
+        // flex-basis: auto;
         flex-direction: row;
         gap: 27px;
+
         
     }
 
@@ -598,9 +680,10 @@ body {
 
 @media(min-width:768px) {
     .about-me {
-        &__container {
-            margin: 0 auto;
-        }
+        margin-bottom: 5rem !important;
+        // &__container {
+        //     margin: 0 auto;
+        // }
 
         &__timeline {
             flex-direction: row;
@@ -609,7 +692,6 @@ body {
 
         &__item {
             flex-direction: column;
-
             .item {
                 &__separator{
                     flex: 0 0 24px;
@@ -635,11 +717,13 @@ body {
     &__container {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+       justify-content: space-between   ;
+        align-items: center;
         gap: 1rem;
 
 
     }
+    
 
     &__socials {
         flex: 0 0 12rem;
@@ -675,6 +759,10 @@ body {
     &__logo {
         font-size: 1.5rem;
         font-weight: 700;
+        a{
+            text-decoration: none;
+            color: white;
+        }
     }
 
     &__socials {
@@ -696,7 +784,7 @@ body {
             li a {
                 text-decoration: none;
                 color: white;
-                font-size: 1.3rem;
+                font-size: 1rem;
             }
         }
     }
