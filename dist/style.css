@@ -26,6 +26,11 @@ body {
   border: 2px solid red;
 }
 
+.section-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
 .section-grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -59,6 +64,7 @@ body {
 .header__container {
   margin-top: 3rem !important;
   margin-bottom: 3rem !important;
+  padding: 0 20px;
 }
 .header__logo {
   grid-column: 1/8;
@@ -460,6 +466,9 @@ body {
     font-weight: 600;
   }
 }
+.additional-tech {
+  margin-bottom: 3rem;
+}
 .additional-tech__container {
   padding: 2rem;
 }
@@ -564,6 +573,9 @@ body {
     left: -1400px;
     top: 12px;
   }
+  .about-me__container .item__heading {
+    font-size: 30px !important;
+  }
 }
 .contacts {
   padding: 0 20px;
@@ -639,10 +651,6 @@ body {
   line-height: 1.5;
 }
 
-.projects__heading {
-  font-weight: 700;
-  font-size: 1.25rem;
-}
 .projects__project-container .project__heading {
   font-size: 1rem;
   font-weight: 700;
@@ -652,21 +660,18 @@ body {
   line-height: 1.5;
 }
 
-.technologies__heading {
-  font-size: 1.25rem;
-  font-weight: 700;
-}
 .technologies__skills .language__level span {
   font-size: 12px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
-.additional-tech__heading {
-  font-size: 1.25rem;
-  font-weight: 700;
-}
 .additional-tech__skills {
   font-size: 1rem;
+  font-weight: 600;
+}
+
+.about-me__container .item__heading {
+  font-size: 16px;
   font-weight: 600;
 }
 

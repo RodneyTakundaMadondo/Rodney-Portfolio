@@ -32,7 +32,10 @@ body {
 .border {
     border: 2px solid red;
 }
-
+.section-title{
+    font-size: 20px;
+    font-weight: 600;
+}
 //LAYOUT STYLES 
 .section-grid {
     display: grid;
@@ -66,6 +69,7 @@ body {
     &__container {
         margin-top: 3rem !important;
         margin-bottom: 3rem !important;
+        padding: 0 20px;
     }
 
 
@@ -581,6 +585,7 @@ body {
 }
 
 .additional-tech {
+    margin-bottom: 3rem;
     &__container {
         padding: 2rem;
     }
@@ -666,12 +671,12 @@ body {
             .last::after {
                 display: none;
             }
+            
         }
     }
 
     &__item {
         display: flex;
-        // flex-basis: auto;
         flex-direction: row;
         gap: 27px;
 
@@ -685,13 +690,8 @@ body {
 @media(min-width:768px) {
     .about-me {
         margin-bottom: 5rem !important;
-        // &__container {
-        //     margin: 0 auto;
-        // }
-
         &__timeline {
             flex-direction: row;
-
         }
 
         &__item {
@@ -713,21 +713,29 @@ body {
             }
         }
     }
+    //TYPOGRAPHY
+    .about-me{
+        &__container{
+          .item{
+              &__heading{
+                  font-size: 30px !important;
+              }
+          }
+        }
+      }
+
 }
 
 .contacts {
     padding: 0 20px;
-
+    margin-bottom: 2rem;
     &__container {
         display: flex;
         flex-wrap: wrap;
        justify-content: space-between   ;
         align-items: center;
         gap: 1rem;
-
-
     }
-    
 
     &__socials {
         flex: 0 0 12rem;
@@ -750,7 +758,7 @@ body {
         background: linear-gradient(270deg, #13adc7 0%, #6978d1 66.67%, #945dd6 100%);
     }
 
-    margin-bottom: 2rem;
+    
 }
 
 @media (min-width:768px) {
@@ -830,12 +838,6 @@ body {
 }
 
 .projects {
-    &__heading {
-
-        font-weight: 700;
-        font-size: 1.25rem;
-    }
-
     &__project-container {
         .project {
             &__heading {
@@ -852,33 +854,32 @@ body {
 }
 
 .technologies {
-    &__heading {
-        font-size: 1.25rem;
-        font-weight: 700;
-    }
-
     &__skills {
         .language__level {
             span {
                 font-size: 12px;
-                font-weight: 500;
+                font-weight: 600;
             }
         }
     }
 }
 
 .additional-tech {
-    &__heading {
-        font-size: 1.25rem;
-        font-weight: 700;
-    }
-
     &__skills {
         font-size: 1rem;
         font-weight: 600;
     }
 }
-
+.about-me{
+  &__container{
+    .item{
+        &__heading{
+            font-size: 16px;
+            font-weight: 600;
+        }
+    }
+  }
+}
 .contacts {
 
     &__email {
