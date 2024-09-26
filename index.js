@@ -13,14 +13,6 @@ let projects = [
     },
     {
         id:2,
-        img:"./images/socialproof.jpg",
-        title:"Social-proof-section",
-        desc:`Responsive HTML/CSS layout, designs obtained from frontendmentor.Utilizing HTML5 and CSS3 (SCSS)`,
-        livelink:"https://rodneytakundamadondo.github.io/Social-proof-section/",
-        github:"https://github.com/RodneyTakundaMadondo/Social-proof-section.git"
-    },
-    {
-        id:3,
         img:"./images/fourfeature.jpg",
         title:"Four-card-feature-section",
         desc:`Responsive HTML/CSS layout, designs obtained from frontendmentor.Utilizing HTML5 and CSS3 (SCSS)`,
@@ -28,12 +20,20 @@ let projects = [
         github:"https://github.com/RodneyTakundaMadondo/Four-card-feature-section.git"
     },
     {
-        id:4,
+        id:3,
         img:"./images/manage-landing.png",
         title:"Manage landing page",
         desc:`Responsive HTML/CSS layout, designs obtained from frontendmentor.Utilizing HTML5 and CSS3 (SCSS)`,
         livelink:"https://rodneytakundamadondo.github.io/Manage-Landing-Page-Master/",
         github:"https://github.com/RodneyTakundaMadondo/Manage-Landing-Page-Master.git"
+    },
+    {
+        id:4,
+        img:"./images/e-com.png",
+        title:"E Commerce Product Page",
+        desc:`Responsive HTML/CSS layout, designs obtained from frontendmentor.Utilizing HTML5 and CSS3 (SCSS)`,
+        livelink:"https://rodneytakundamadondo.github.io/E-commerce-product-page/",
+        github:"https://github.com/RodneyTakundaMadondo/E-commerce-product-page.git"
     }
 ]
 
